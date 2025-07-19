@@ -20,7 +20,14 @@ const CreateURLForm = () => {
     >
   ) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
+
+    // Remove spaces from urlName and notifyEmail fields to prevent URL and email issues
+    let processedValue = value;
+    if (name === "urlName" || name === "notifyEmail") {
+      processedValue = value.replace(/\s/g, "");
+    }
+
+    setFormData((prevData) => ({ ...prevData, [name]: processedValue }));
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -86,7 +93,7 @@ const CreateURLForm = () => {
             id="urlName"
             type="text"
             name="urlName"
-            placeholder="Enter name or identifier (optional)"
+            placeholder="Link name or identifier (no spaces)"
             value={formData.urlName}
             onChange={handleChange}
             className="text-white bg-transparent border border-dark_border border-opacity-60 rounded-md px-3 py-2 w-full text-sm sm:text-base focus:border-primary focus-visible:outline-0"
@@ -119,7 +126,7 @@ const CreateURLForm = () => {
             id="notifyEmail"
             type="email"
             name="notifyEmail"
-            placeholder=" contact email (optional)"
+            placeholder="Emergency contact email (optional, no spaces)"
             value={formData.notifyEmail}
             onChange={handleChange}
             className="text-white bg-transparent border border-dark_border border-opacity-60 rounded-md px-3 py-2 w-full text-sm sm:text-base focus:border-primary focus-visible:outline-0"

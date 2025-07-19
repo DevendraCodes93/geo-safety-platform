@@ -94,33 +94,39 @@ const Hero = () => {
               <span className="text-primary">People</span>
             </h1>
             <p className="text-gray-300 text-18 lg:text-start text-center mb-10 max-w-lg">
-              Create custom location tracking URLs for business needs, delivery tracking, 
-              and help lost people find their way. Secure location sharing with 
-              emergency assistance features for those who need help.
+              Create custom location tracking URLs for business needs, delivery
+              tracking, and help lost people find their way. Secure location
+              sharing with emergency assistance features for those who need
+              help.
             </p>
-            <div className="flex items-center md:justify-start justify-center gap-8">
+            <div className="flex items-center md:justify-start justify-center gap-4 sm:gap-8">
               <button
-                className="bg-primary border border-primary rounded-lg text-21 font-medium hover:bg-transparent hover:text-primary text-darkmode py-2 px-7 z-50"
+                className="bg-primary border border-primary rounded-lg sm:text-21 text-18 font-medium hover:bg-transparent hover:text-primary text-darkmode sm:py-2 py-3 sm:px-7 px-5 z-50 transition-all duration-200 active:scale-95"
                 onClick={() => setIsCreateURLOpen(true)}
+                onTouchStart={() => {}} // Enable touch support
               >
                 Create URL
               </button>
               <Link
                 href={"/track"}
-                className="bg-transparent border border-primary rounded-lg text-21 font-medium hover:bg-primary hover:text-darkmode text-primary py-2 px-7"
+                className="bg-transparent border border-primary rounded-lg sm:text-21 text-18 font-medium hover:bg-primary hover:text-darkmode text-primary sm:py-2 py-3 sm:px-7 px-5 transition-all duration-200 active:scale-95 block text-center"
                 // onClick={() => setIsTrackLocationOpen(true)}
               >
                 Track Location
               </Link>
             </div>
-            <div className="flex items-center md:justify-start justify-center gap-8 mt-12">
-              <div className="bg-gray-800 rounded-lg px-6 py-3 flex items-center gap-3">
+            <div className="flex flex-col sm:flex-row items-center md:justify-start justify-center gap-4 sm:gap-8 mt-12">
+              <div className="bg-gray-800 rounded-lg px-4 sm:px-6 py-3 flex items-center gap-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-white text-sm">Secure & GDPR Compliant</span>
+                <span className="text-white text-xs sm:text-sm">
+                  Secure & GDPR Compliant
+                </span>
               </div>
-              <div className="bg-gray-800 rounded-lg px-6 py-3 flex items-center gap-3">
+              <div className="bg-gray-800 rounded-lg px-4 sm:px-6 py-3 flex items-center gap-3">
                 <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-                <span className="text-white text-sm">Real-time Tracking</span>
+                <span className="text-white text-xs sm:text-sm">
+                  Real-time Tracking
+                </span>
               </div>
             </div>
           </motion.div>

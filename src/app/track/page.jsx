@@ -262,9 +262,12 @@ const Page = () => {
               <p className="text-gray-400">
                 Create your first tracking URL to get started!
               </p>
-              <button className="mt-4 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">
+              <Link
+                href="/"
+                className="inline-block mt-4 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 active:scale-95"
+              >
                 Create URL
-              </button>
+              </Link>
             </div>
           )}
         </div>

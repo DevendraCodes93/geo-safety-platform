@@ -18,8 +18,8 @@ const Platform = () => {
           <div className="lg:col-span-4 col-span-12">
             <div className="flex lg:justify-end lg:mt-0 mt-7 justify-center">
               <Link
-                href="#"
-                className="text-darkmode bg-primary border border-primary py-3 px-5 rounded-lg sm:text-21 text-18 font-medium hover:bg-transparent hover:text-primary"
+                href="/#main-banner"
+                className="text-darkmode bg-primary border border-primary py-3 px-5 rounded-lg sm:text-21 text-18 font-medium hover:bg-transparent hover:text-primary transition-all duration-200 active:scale-95"
               >
                 Get Started
               </Link>
