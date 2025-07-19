@@ -10,9 +10,9 @@ import { Metadata, Viewport } from "next";
 const font = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "LocationTracker - Precise Location Tracking Service",
+  title: "Safe Haven Locator - Help Lost Children & People Find Home",
   description:
-    "Advanced location tracking service with high accuracy GPS tracking, detailed address resolution, and real-time location analytics.",
+    "A compassionate platform to help lost children, elderly people, and anyone who doesn't know their address find their way home safely. Emergency location sharing for family reunification.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
