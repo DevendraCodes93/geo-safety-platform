@@ -54,7 +54,7 @@ export const QuickStart = () => {
         </div>
         <p className="text-base font-medium text-muted text-opacity-60 my-4">
           This command will start a local webserver{" "}
-          <span className="dark:text-white">http://localhost:3000:</span>
+          <span className="dark:text-white">http://icon.png:3000:</span>
         </p>
         <div className="py-4 px-3 rounded-md bg-dark_grey">
           <p className="text-sm text-gray-400">

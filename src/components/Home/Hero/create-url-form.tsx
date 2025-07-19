@@ -31,7 +31,7 @@ const CreateURLForm = () => {
     const uniqueSuffix = Date.now()
       .toString(36)
       .replace(/[^a-z0-9]+/g, "");
-    const url = `http://localhost:3001/${creatorId}/${formData.urlName}/${uniqueSuffix}`;
+    const url = `https://safe-buddy.vercel.app/${creatorId}/${formData.urlName}/${uniqueSuffix}`;
 
     try {
       const response = await fetch("/api/create", {
@@ -51,7 +51,9 @@ const CreateURLForm = () => {
       const data = await response.json();
 
       // If backend returns slug, use it; else fallback to local URL
-      const newURL = data.slug ? `https://trackr.pro/l/${data.slug}` : url;
+      const newURL = data.slug
+        ? `https://safe-buddy.vercel.app/l/${data.slug}`
+        : url;
 
       setGeneratedURL(newURL);
       toast.success("Tracking URL created successfully!");
