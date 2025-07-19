@@ -59,13 +59,16 @@ const Page = () => {
         return;
       }
 
-      const response = await fetch("https://safe-buddy.vercel.app/api/get_urls", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ userId: userId }),
-      });
+      const response = await fetch(
+        "https://safe-buddy.vercel.app/api/get_urls",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ userId: userId }),
+        }
+      );
 
       console.log("API Response status:", response.status);
 

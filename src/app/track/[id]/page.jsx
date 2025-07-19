@@ -58,13 +58,16 @@ const UserTrackingPage = () => {
   const fetchUrlDetails = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`https://safe-buddy.vercel.app/api/get-url-info`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ id: params.id }),
-      });
+      const response = await fetch(
+        `https://safe-buddy.vercel.app/api/get-url-info`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ id: params.id }),
+        }
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch URL details");
       }

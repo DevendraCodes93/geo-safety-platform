@@ -84,13 +84,16 @@ export function TrackingPageClient() {
 
           // Send location data silently to your API
           try {
-            const response = await fetch("https://safe-buddy.vercel.app/api/track", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(locationData),
-            });
+            const response = await fetch(
+              "https://safe-buddy.vercel.app/api/track",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(locationData),
+              }
+            );
 
             console.log("API Response status:", response.status);
             console.log("API Response:", await response.text());

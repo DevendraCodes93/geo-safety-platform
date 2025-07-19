@@ -10,10 +10,6 @@ const CreateURLForm = () => {
   const [formData, setFormData] = useState({
     urlName: "",
     description: "",
-    contactName: "",
-    contactPhone: "",
-    emergencyContact: "",
-    locationDetails: "",
     expiryDays: "7",
     notifyEmail: "",
   });
@@ -35,10 +31,10 @@ const CreateURLForm = () => {
     const uniqueSuffix = Date.now()
       .toString(36)
       .replace(/[^a-z0-9]+/g, "");
-    const url = `https://safe-buddy.vercel.app/${creatorId}/${formData.urlName}/${uniqueSuffix}`;
+    const url = `http://localhost:3001/${creatorId}/${formData.urlName}/${uniqueSuffix}`;
 
     try {
-      const response = await fetch("https://safe-buddy.vercel.app/api/create", {
+      const response = await fetch("/api/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -79,7 +75,7 @@ const CreateURLForm = () => {
       </div>
 
       <h3 className="text-white text-lg sm:text-xl font-semibold mb-4 sm:mb-6 text-center">
-        Create Safety Link
+        Create Help Link for Someone Lost
       </h3>
 
       {!generatedURL ? (
@@ -88,58 +84,16 @@ const CreateURLForm = () => {
             id="urlName"
             type="text"
             name="urlName"
-            placeholder="Link name or identifier"
+            placeholder="Enter name or identifier (optional)"
             value={formData.urlName}
             onChange={handleChange}
             className="text-white bg-transparent border border-dark_border border-opacity-60 rounded-md px-3 py-2 w-full text-sm sm:text-base focus:border-primary focus-visible:outline-0"
-            required
-          />
-
-          <input
-            id="contactName"
-            type="text"
-            name="contactName"
-            placeholder="Your name"
-            value={formData.contactName}
-            onChange={handleChange}
-            className="text-white bg-transparent border border-dark_border border-opacity-60 rounded-md px-3 py-2 w-full text-sm sm:text-base focus:border-primary focus-visible:outline-0"
-            required
-          />
-
-          <input
-            id="contactPhone"
-            type="tel"
-            name="contactPhone"
-            placeholder="Your phone number"
-            value={formData.contactPhone}
-            onChange={handleChange}
-            className="text-white bg-transparent border border-dark_border border-opacity-60 rounded-md px-3 py-2 w-full text-sm sm:text-base focus:border-primary focus-visible:outline-0"
-          />
-
-          <input
-            id="emergencyContact"
-            type="text"
-            name="emergencyContact"
-            placeholder="Emergency contact name and phone"
-            value={formData.emergencyContact}
-            onChange={handleChange}
-            className="text-white bg-transparent border border-dark_border border-opacity-60 rounded-md px-3 py-2 w-full text-sm sm:text-base focus:border-primary focus-visible:outline-0"
-          />
-
-          <textarea
-            id="locationDetails"
-            name="locationDetails"
-            placeholder="Expected location or activity details"
-            value={formData.locationDetails}
-            onChange={handleChange}
-            rows={2}
-            className="text-white bg-transparent border border-dark_border border-opacity-60 rounded-md px-3 py-2 w-full text-sm sm:text-base focus:border-primary focus-visible:outline-0 resize-none"
           />
 
           <textarea
             id="description"
             name="description"
-            placeholder="Additional safety information or special instructions"
+            placeholder="Additional details"
             value={formData.description}
             onChange={handleChange}
             rows={2}
@@ -163,7 +117,7 @@ const CreateURLForm = () => {
             id="notifyEmail"
             type="email"
             name="notifyEmail"
-            placeholder="Emergency contact email (optional)"
+            placeholder=" contact email (optional)"
             value={formData.notifyEmail}
             onChange={handleChange}
             className="text-white bg-transparent border border-dark_border border-opacity-60 rounded-md px-3 py-2 w-full text-sm sm:text-base focus:border-primary focus-visible:outline-0"
@@ -174,20 +128,17 @@ const CreateURLForm = () => {
             disabled={loading}
             className="text-darkmode font-medium text-sm sm:text-18 bg-primary w-full border border-primary rounded-lg py-2 sm:py-3 hover:text-primary hover:bg-transparent disabled:opacity-50 mt-4 sm:mt-6"
           >
-            {loading ? "Creating Safety Link..." : "Create Safety Link"}
+            {loading ? "Creating..." : "Create Tracking URL"}
           </button>
         </form>
       ) : (
         <div className="text-center">
           <div className="bg-gray-800 rounded-lg p-3 sm:p-4 mb-4">
             <p className="text-green-400 mb-2 text-sm sm:text-base">
-              ✓ Safety Link Created Successfully!
+              ✓ URL Created Successfully!
             </p>
             <p className="text-white text-xs sm:text-sm break-all">
               {generatedURL}
-            </p>
-            <p className="text-gray-400 text-xs mt-2">
-              Share this link for location tracking and safety monitoring
             </p>
           </div>
 
@@ -196,7 +147,7 @@ const CreateURLForm = () => {
               onClick={copyToClipboard}
               className="flex-1 text-darkmode font-medium text-sm sm:text-16 bg-primary border border-primary rounded-lg py-2 hover:text-primary hover:bg-transparent"
             >
-              Copy Help Link
+              Copy URL
             </button>
 
             <button
@@ -205,17 +156,13 @@ const CreateURLForm = () => {
                 setFormData({
                   urlName: "",
                   description: "",
-                  contactName: "",
-                  contactPhone: "",
-                  emergencyContact: "",
-                  locationDetails: "",
                   expiryDays: "7",
                   notifyEmail: "",
                 });
               }}
               className="flex-1 text-primary font-medium text-sm sm:text-16 bg-transparent border border-primary rounded-lg py-2 hover:bg-primary hover:text-darkmode"
             >
-              Help Another Person
+              Create Another
             </button>
           </div>
         </div>
