@@ -81,7 +81,6 @@ const TermsOfService = () => {
                   expires.
                 </p>
                 <ul className="list-disc list-inside space-y-2">
-                 
                   <li>If you set 7 days expiry → Data deleted after 7 days</li>
                   <li>
                     If you set 30 days expiry → Data deleted after 30 days
@@ -118,7 +117,8 @@ const TermsOfService = () => {
                 <li>Track people without their knowledge or consent</li>
                 <li>Use for stalking, harassment, or illegal surveillance</li>
                 <li>
-                  Share tracking links with people who haven&apos;t given permission
+                  Share tracking links with people who haven&apos;t given
+                  permission
                 </li>
                 <li>Use for any illegal or harmful activities</li>
                 <li>Sell or misuse location data</li>
@@ -135,7 +135,9 @@ const TermsOfService = () => {
                   We only collect location data when someone clicks your link
                   and gives permission
                 </li>
-                <li>We ask for consent before accessing anyone&apos;s location</li>
+                <li>
+                  We ask for consent before accessing anyone&apos;s location
+                </li>
                 <li>All data is encrypted and stored securely</li>
                 <li>We never share your data with third parties</li>
                 <li>
@@ -196,7 +198,9 @@ const TermsOfService = () => {
               </h2>
               <ul className="text-gray-300 list-disc list-inside space-y-2">
                 <li>Use the service only for legitimate, helpful purposes</li>
-                <li>Respect others&apos; privacy and get consent before tracking</li>
+                <li>
+                  Respect others&apos; privacy and get consent before tracking
+                </li>
                 <li>Contact emergency services for serious situations</li>
                 <li>Not use the service for illegal activities</li>
                 <li>

@@ -89,9 +89,9 @@ const ConsentModal: React.FC<ConsentModalProps> = ({
               </div>
 
               <p className="text-xs text-gray-400">
-                By clicking &quot;Allow Location Tracking,&quot; you consent to the
-                collection and processing of your location data as described in
-                our{" "}
+                By clicking &quot;Allow Location Tracking,&quot; you consent to
+                the collection and processing of your location data as described
+                in our{" "}
                 <a
                   href="/privacy-policy"
                   className="text-blue-400 hover:text-blue-300 underline"
