@@ -9,6 +9,7 @@ const Page = () => {
 
   // Generate random URLs for demo (you'll replace this with actual API call)
   const generateRandomUrls = () => {
+    console.log("came");
     const randomUrls = [
       {
         id: 1,
