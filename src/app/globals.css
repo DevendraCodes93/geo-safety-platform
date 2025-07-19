@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom icon and logo alignment utilities */
+@layer components {
+  /* Logo Container Alignment */
+  .logo-container {
+    @apply flex items-center;
+    min-height: 40px;
+  }
+
+  .logo-container img {
+    @apply max-h-10 w-auto object-contain;
+  }
+
+  /* Header Logo Specific */
+  .header-logo {
+    @apply flex items-center justify-center;
+    max-height: 48px;
+  }
+
+  .header-logo img {
+    @apply h-auto w-auto max-h-12 object-contain;
+    max-width: 160px;
+  }
+
+  /* Mobile Logo Adjustments */
+  .mobile-logo {
+    @apply flex items-center justify-start;
+    max-height: 40px;
+  }
+
+  .mobile-logo img {
+    @apply h-auto w-auto max-h-8 object-contain;
+    max-width: 120px;
+  }
+
+  /* Icon Alignment Utilities */
+  .icon-wrapper {
+    @apply flex items-center justify-center;
+    min-width: 1rem;
+    min-height: 1rem;
+  }
+
+  /* Navigation Icon Alignment */
+  .nav-icon {
+    @apply flex items-center justify-center w-5 h-5;
+  }
+
+  /* Button Icon Alignment */
+  .btn-icon {
+    @apply inline-flex items-center justify-center;
+  }
+
+  .btn-icon svg,
+  .btn-icon img {
+    @apply w-4 h-4 object-contain;
+  }
+
+  /* Social Media Icon Alignment */
+  .social-icon {
+    @apply flex items-center justify-center w-10 h-10 rounded-full;
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .social-icon:hover {
+    @apply transform scale-110;
+  }
+
+  .social-icon svg {
+    @apply w-5 h-5;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  @apply bg-darkmode;
+}
+
+.blog-details p,
+.blog-details hr {
+  @apply mb-8;
+}
+
+.blog-details hr {
+  @apply border-dark_border;
+}
+
+.blog-details strong {
+  @apply font-bold dark:text-white;
+}
+
+.blog-details ul {
+  @apply mb-8 list-inside list-disc space-y-3;
+}
+
+.blog-details ol {
+  @apply mb-8 list-inside list-decimal space-y-3;
+}
+
+.blog-details h1 {
+  @apply mb-8 text-3xl font-bold text-midnight_text dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.28];
+}
+
+.blog-details h2 {
+  @apply mb-8 text-2xl font-bold text-midnight_text dark:text-white sm:text-3xl md:text-[35px] md:leading-[1.28];
+}
+
+.blog-details h3 {
+  @apply mb-6 text-2xl font-bold dark:text-white sm:text-[28px] sm:leading-[40px];
+}

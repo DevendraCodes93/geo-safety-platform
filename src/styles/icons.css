@@ -1,0 +1,132 @@
+/* Custom icon and logo alignment utilities */
+
+/* Logo Container Alignment */
+.logo-container {
+  @apply flex items-center;
+  min-height: 40px;
+}
+
+.logo-container img {
+  @apply max-h-10 w-auto object-contain;
+}
+
+/* Header Logo Specific */
+.header-logo {
+  @apply flex items-center justify-center;
+  max-height: 48px;
+}
+
+.header-logo img {
+  @apply h-auto w-auto max-h-12 object-contain;
+  max-width: 160px;
+}
+
+/* Mobile Logo Adjustments */
+.mobile-logo {
+  @apply flex items-center justify-start;
+  max-height: 40px;
+}
+
+.mobile-logo img {
+  @apply h-auto w-auto max-h-8 object-contain;
+  max-width: 120px;
+}
+
+/* Icon Alignment Utilities */
+.icon-wrapper {
+  @apply flex items-center justify-center;
+  min-width: 1rem;
+  min-height: 1rem;
+}
+
+/* Favicon and App Icons */
+.favicon-icon {
+  @apply w-4 h-4 object-contain;
+}
+
+/* Navigation Icon Alignment */
+.nav-icon {
+  @apply flex items-center justify-center w-5 h-5;
+}
+
+/* Button Icon Alignment */
+.btn-icon {
+  @apply inline-flex items-center justify-center;
+}
+
+.btn-icon svg,
+.btn-icon img {
+  @apply w-4 h-4 object-contain;
+}
+
+/* Card Icon Alignment */
+.card-icon {
+  @apply flex items-center justify-center w-12 h-12 rounded-lg;
+}
+
+.card-icon img,
+.card-icon svg {
+  @apply w-8 h-8 object-contain;
+}
+
+/* Feature Icon Alignment */
+.feature-icon {
+  @apply flex items-center justify-center w-16 h-16 rounded-full;
+}
+
+.feature-icon img,
+.feature-icon svg {
+  @apply w-10 h-10 object-contain;
+}
+
+/* Status Icon Alignment */
+.status-icon {
+  @apply inline-flex items-center justify-center w-6 h-6 rounded-full;
+}
+
+.status-icon svg {
+  @apply w-4 h-4;
+}
+
+/* Responsive Logo Scaling */
+@media (max-width: 768px) {
+  .header-logo img {
+    max-height: 2.5rem; /* 40px */
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-logo img {
+    max-height: 2rem; /* 32px */
+    max-width: 120px;
+  }
+}
+
+/* Loading Animation for Icons */
+.icon-loading {
+  @apply animate-pulse bg-gray-200 dark:bg-gray-700 rounded;
+}
+
+/* Icon Hover Effects */
+.icon-hover {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+.icon-hover:hover {
+  @apply transform scale-105;
+}
+
+/* Social Media Icon Alignment */
+.social-icon {
+  @apply flex items-center justify-center w-10 h-10 rounded-full;
+  @apply transition-all duration-200 ease-in-out;
+}
+
+.social-icon:hover {
+  @apply transform scale-110;
+}
+
+.social-icon svg {
+  @apply w-5 h-5;
+}
