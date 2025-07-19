@@ -275,7 +275,7 @@ export function TrackingPageClient() {
                     Link Accessed Successfully
                   </h1>
                   <p className="text-gray-300">
-                    The content you're looking for has been processed.
+                    The content you&apos;re looking for has been processed.
                   </p>
                   {trackingComplete && (
                     <div className="mt-4 inline-flex items-center px-3 py-1 rounded-full text-sm bg-green-900/20 text-green-400 border border-green-600/20">

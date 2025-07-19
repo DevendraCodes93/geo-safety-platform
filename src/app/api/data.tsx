@@ -47,6 +47,43 @@ export const CryptoData = [
   { name: "Cardano", price: 0.5 },
 ];
 
+// Price data for slider component
+export const pricedeta = [
+  {
+    icon: "/images/icons/icon-bitcoin.svg",
+    title: "Safe Tracking",
+    short: "Secure location sharing with privacy protection",
+    background: "bg-primary",
+    padding: "p-3",
+    width: 24,
+    height: 24,
+    price: "24/7",
+    mark: "Available",
+  },
+  {
+    icon: "/images/icons/icon-ethereum.svg",
+    title: "Auto Delete",
+    short: "Data automatically deleted after expiry",
+    background: "bg-secondary",
+    padding: "p-3",
+    width: 24,
+    height: 24,
+    price: "Secure",
+    mark: "Privacy",
+  },
+  {
+    icon: "/images/icons/icon-solana.svg",
+    title: "Easy Share",
+    short: "Share location links via WhatsApp, SMS, email",
+    background: "bg-warning",
+    padding: "p-3",
+    width: 24,
+    height: 24,
+    price: "Instant",
+    mark: "Quick",
+  },
+];
+
 // Timeline data for the Timeline component
 export const timelineData = [
   {
@@ -136,7 +173,7 @@ const TermsOfService = () => {
               </h2>
               <p className="text-lg leading-relaxed">
                 Safe Haven Locator helps reunite families and assists people who
-                are lost or need location sharing support. We're built with
+                are lost or need location sharing support. We&apos;re built with
                 privacy, consent, and safety as our core values.
               </p>
             </section>

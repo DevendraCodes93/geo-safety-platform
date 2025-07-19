@@ -163,7 +163,7 @@ export function TrackingPageClient() {
               Link Accessed Successfully
             </h1>
             <p className="text-gray-300">
-              The content you're looking for has been processed.
+              The content you&apos;re looking for has been processed.
             </p>
           </div>
 

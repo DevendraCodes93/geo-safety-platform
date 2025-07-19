@@ -90,7 +90,7 @@ const TermsOfService = () => {
                 </ul>
                 <p className="text-yellow-400">
                   <strong>Important:</strong> Once deleted, we cannot recover
-                  the data. This protects everyone's privacy.
+                  the data. This protects everyone&apos;s privacy.
                 </p>
               </div>
             </section>
@@ -103,7 +103,7 @@ const TermsOfService = () => {
               <ul className="text-gray-300 list-disc list-inside space-y-2">
                 <li>Help lost children find their parents/guardians</li>
                 <li>Assist elderly people with memory issues</li>
-                <li>Help people who don't know their current address</li>
+                <li>Help people who don&apos;t know their current address</li>
                 <li>Emergency location sharing for safety purposes</li>
                 <li>Legitimate business tracking (delivery, appointments)</li>
               </ul>
@@ -118,7 +118,7 @@ const TermsOfService = () => {
                 <li>Track people without their knowledge or consent</li>
                 <li>Use for stalking, harassment, or illegal surveillance</li>
                 <li>
-                  Share tracking links with people who haven't given permission
+                  Share tracking links with people who haven&apos;t given permission
                 </li>
                 <li>Use for any illegal or harmful activities</li>
                 <li>Sell or misuse location data</li>
@@ -135,7 +135,7 @@ const TermsOfService = () => {
                   We only collect location data when someone clicks your link
                   and gives permission
                 </li>
-                <li>We ask for consent before accessing anyone's location</li>
+                <li>We ask for consent before accessing anyone&apos;s location</li>
                 <li>All data is encrypted and stored securely</li>
                 <li>We never share your data with third parties</li>
                 <li>
@@ -150,7 +150,7 @@ const TermsOfService = () => {
                 🚨 Emergency Situations
               </h2>
               <div className="text-gray-300 space-y-3">
-                <p>If you're using this service in an emergency:</p>
+                <p>If you&apos;re using this service in an emergency:</p>
                 <ul className="list-disc list-inside space-y-2">
                   <li>
                     <strong>Always contact local authorities first</strong>{" "}
@@ -196,7 +196,7 @@ const TermsOfService = () => {
               </h2>
               <ul className="text-gray-300 list-disc list-inside space-y-2">
                 <li>Use the service only for legitimate, helpful purposes</li>
-                <li>Respect others' privacy and get consent before tracking</li>
+                <li>Respect others&apos; privacy and get consent before tracking</li>
                 <li>Contact emergency services for serious situations</li>
                 <li>Not use the service for illegal activities</li>
                 <li>

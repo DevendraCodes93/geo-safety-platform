@@ -89,7 +89,7 @@ const ConsentModal: React.FC<ConsentModalProps> = ({
               </div>
 
               <p className="text-xs text-gray-400">
-                By clicking "Allow Location Tracking," you consent to the
+                By clicking &quot;Allow Location Tracking,&quot; you consent to the
                 collection and processing of your location data as described in
                 our{" "}
                 <a

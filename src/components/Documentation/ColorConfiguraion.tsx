@@ -12,25 +12,25 @@ export const ColorConfiguration = () => {
         </p>
         <div className="py-4 px-5 rounded-md bg-dark_grey mt-8">
           <p className="text-sm text-gray-400 flex flex-col gap-2">
-            <span>primary: "#99E39E",</span>
-            <span>secondary: "#1DC8CD",</span>
-            <span>midnight_text: "#263238",</span>
-            <span>muted: "#D8DBDB",</span>
-            <span>error: "#CF3127",</span>
-            <span>warning: "#F7931A",</span>
-            <span>light_grey: "#505050",</span>
-            <span>grey: "#F5F7FA",</span>
-            <span>dark_grey: "#1E2229",</span>
-            <span>border: "#E1E1E1",</span>
-            <span>success: "#3CD278",</span>
-            <span>section: "#737373",</span>
-            <span>darkmode: "#000510",</span>
-            <span>darklight: "#0C372A",</span>
-            <span>dark_border: "#959595",</span>
-            <span>tealGreen: "#477E70",</span>
-            <span>charcoalGray: "#666C78",</span>
-            <span>deepSlate: "#282C36",</span>
-            <span>slateGray: "#2F3543",</span>
+            <span>primary: &quot;#99E39E&quot;,</span>
+            <span>secondary: &quot;#1DC8CD&quot;,</span>
+            <span>midnight_text: &quot;#263238&quot;,</span>
+            <span>muted: &quot;#D8DBDB&quot;,</span>
+            <span>error: &quot;#CF3127&quot;,</span>
+            <span>warning: &quot;#F7931A&quot;,</span>
+            <span>light_grey: &quot;#505050&quot;,</span>
+            <span>grey: &quot;#F5F7FA&quot;,</span>
+            <span>dark_grey: &quot;#1E2229&quot;,</span>
+            <span>border: &quot;#E1E1E1&quot;,</span>
+            <span>success: &quot;#3CD278&quot;,</span>
+            <span>section: &quot;#737373&quot;,</span>
+            <span>darkmode: &quot;#000510&quot;,</span>
+            <span>darklight: &quot;#0C372A&quot;,</span>
+            <span>dark_border: &quot;#959595&quot;,</span>
+            <span>tealGreen: &quot;#477E70&quot;,</span>
+            <span>charcoalGray: &quot;#666C78&quot;,</span>
+            <span>deepSlate: &quot;#282C36&quot;,</span>
+            <span>slateGray: &quot;#2F3543&quot;,</span>
           </p>
         </div>
       </div>
@@ -44,8 +44,8 @@ export const ColorConfiguration = () => {
         </p>
         <div className="py-4 px-5 rounded-md bg-dark_grey mt-8">
           <p className="text-sm text-gray-400 flex flex-col gap-2">
-            <span>primary: "#2CDD9B",</span>
-            <span>secondary: "#1DC8CD",</span>
+            <span>primary: &quot;#2CDD9B&quot;,</span>
+            <span>secondary: &quot;#1DC8CD&quot;,</span>
           </p>
         </div>
       </div>
