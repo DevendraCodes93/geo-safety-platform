@@ -1,4 +1,4 @@
-import Signin from "@/components/Auth/SignIn";
+import { SignIn } from "@/components/Auth";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Metadata } from "next";
 
@@ -16,7 +16,7 @@ const SigninPage = () => {
         ]}
       />
 
-      <Signin />
+      <SignIn />
     </>
   );
 };
