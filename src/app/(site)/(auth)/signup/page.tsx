@@ -1,16 +1,19 @@
 import SignUp from "@/components/Auth/SignUp";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Sign Up | Property",
+    "Sign Up | Safe Haven Locator",
 };
 
 const SignupPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Sign Up Page" />
+      <Breadcrumb links={[
+        { href: "/", text: "Home" },
+        { href: "/signup", text: "Sign Up" }
+      ]} />
 
       <SignUp />
     </>
