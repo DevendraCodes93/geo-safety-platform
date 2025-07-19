@@ -1,17 +1,12 @@
-import { getImagePrefix } from "@/utils/utils";
-import Image from "next/image";
 import Link from "next/link";
 
 const Logo: React.FC = () => {
   return (
     <Link href="/" className="flex items-center">
-      <Image
-        src={`${getImagePrefix()}images/logo/logo.svg`}
-        alt="Logo"
-        width={160}
-        height={50}
-        className="h-10 w-auto"
-      />
+      <div className="text-2xl font-bold">
+        <span className="text-white">Safe</span>
+        <span className="text-green-400">Buddy</span>
+      </div>
     </Link>
   );
 };
