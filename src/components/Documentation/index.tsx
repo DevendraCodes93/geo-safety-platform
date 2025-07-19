@@ -1,1 +1,1 @@
-export { Documentation } from "./Documentation";
+export { default as Documentation } from "./Documentation";

@@ -1,2 +1,2 @@
 // Components barrel exports
-export * from "./Documentation";
+export { Documentation } from "./Documentation";

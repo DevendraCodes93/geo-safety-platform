@@ -5,7 +5,7 @@ import { PackageStructure } from "./PackageStructure"
 import { QuickStart } from "./QuickStart"
 
 
-export const Documentation = () => {
+const Documentation = () => {
     return (
         <div className="bg-darkmode md:pt-0 pt-12" >
             <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md p-6 lg:pt-44 pt-16">
@@ -24,3 +24,5 @@ export const Documentation = () => {
         </div>
     )
 }
+
+export default Documentation;
