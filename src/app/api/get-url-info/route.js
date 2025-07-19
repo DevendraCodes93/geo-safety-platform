@@ -36,7 +36,7 @@ export const POST = async (req, res) => {
       description: urlDetails.description || "No description",
       fullUrl:
         urlDetails.url ||
-        `http://localhost:3001/${urlDetails.creatorId}/tracking/${urlDetails._id}`,
+        `https://safe-buddy.vercel.app/${urlDetails.creatorId}/tracking/${urlDetails._id}`,
       code: urlDetails._id.toString().slice(-6), // Use last 6 chars of ID as code
     };
 

@@ -15,35 +15,35 @@ const Page = () => {
         urlName: "Product Launch Campaign",
         createdTime: "2025-01-20T10:30:00Z",
         visitors: 145,
-        fullUrl: "http://localhost:3001/usr123/product-launch/xyz789",
+        fullUrl: "https://safe-buddy.vercel.app/usr123/product-launch/xyz789",
       },
       {
         id: 2,
         urlName: "Survey Form Link",
         createdTime: "2025-01-19T14:22:00Z",
         visitors: 67,
-        fullUrl: "http://localhost:3001/usr456/survey-form/abc123",
+        fullUrl: "https://safe-buddy.vercel.app/usr456/survey-form/abc123",
       },
       {
         id: 3,
         urlName: "Event Registration",
         createdTime: "2025-01-18T09:15:00Z",
         visitors: 289,
-        fullUrl: "http://localhost:3001/usr789/event-reg/def456",
+        fullUrl: "https://safe-buddy.vercel.app/usr789/event-reg/def456",
       },
       {
         id: 4,
         urlName: "Newsletter Signup",
         createdTime: "2025-01-17T16:45:00Z",
         visitors: 23,
-        fullUrl: "http://localhost:3001/usr101/newsletter/ghi789",
+        fullUrl: "https://safe-buddy.vercel.app/usr101/newsletter/ghi789",
       },
       {
         id: 5,
         urlName: "Beta Testing Access",
         createdTime: "2025-01-16T11:30:00Z",
         visitors: 456,
-        fullUrl: "http://localhost:3001/usr202/beta-test/jkl012",
+        fullUrl: "https://safe-buddy.vercel.app/usr202/beta-test/jkl012",
       },
     ];
     return randomUrls;
@@ -59,7 +59,7 @@ const Page = () => {
         return;
       }
 
-      const response = await fetch("/api/get_urls", {
+      const response = await fetch("https://safe-buddy.vercel.app/api/get_urls", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

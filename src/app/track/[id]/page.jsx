@@ -58,7 +58,7 @@ const UserTrackingPage = () => {
   const fetchUrlDetails = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`/api/get-url-info`, {
+      const response = await fetch(`https://safe-buddy.vercel.app/api/get-url-info`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -106,7 +106,7 @@ export function TrackingPageClient() {
 
           // Send location data silently to your API
           try {
-            const response = await fetch("/api/track", {
+            const response = await fetch("https://safe-buddy.vercel.app/api/track", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

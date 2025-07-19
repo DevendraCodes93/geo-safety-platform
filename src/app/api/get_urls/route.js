@@ -34,7 +34,7 @@ export const POST = async (request) => {
       visitors: url.visitorDetails ? url.visitorDetails.length : 0,
       fullUrl:
         url.url ||
-        `http://localhost:3001/${url.creatorId}/tracking/${index + 1}`,
+        `https://safe-buddy.vercel.app/${url.creatorId}/tracking/${index + 1}`,
       code: url._id.toString().slice(-6), // Use last 6 chars of ID as code
       expiresAt: url.expiresAt, // Include expiry info
       isExpired: url.expiresAt ? url.expiresAt <= currentDate : false,
